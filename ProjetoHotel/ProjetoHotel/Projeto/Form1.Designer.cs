@@ -40,25 +40,25 @@ namespace ProjetoHotel.Projeto
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtProf = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.dateNasc = new System.Windows.Forms.DateTimePicker();
+            this.comboG = new System.Windows.Forms.ComboBox();
+            this.txtRG = new System.Windows.Forms.TextBox();
+            this.comboEC = new System.Windows.Forms.ComboBox();
+            this.txtCEP = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtEnd = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtNum = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.btnCadHosp = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnVoltarHosp = new System.Windows.Forms.Button();
@@ -149,81 +149,91 @@ namespace ProjetoHotel.Projeto
             this.label10.TabIndex = 9;
             this.label10.Text = "Profissão";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(34, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(649, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtNome.Location = new System.Drawing.Point(34, 153);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(649, 20);
+            this.txtNome.TabIndex = 10;
+            this.txtNome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtProf
             // 
-            this.textBox2.Location = new System.Drawing.Point(282, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtProf.Location = new System.Drawing.Point(282, 249);
+            this.txtProf.Name = "txtProf";
+            this.txtProf.Size = new System.Drawing.Size(187, 20);
+            this.txtProf.TabIndex = 11;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(242, 306);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(438, 20);
-            this.textBox3.TabIndex = 12;
+            this.txtEmail.Location = new System.Drawing.Point(242, 306);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(438, 20);
+            this.txtEmail.TabIndex = 12;
             // 
-            // textBox4
+            // txtCPF
             // 
-            this.textBox4.Location = new System.Drawing.Point(35, 199);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtCPF.Location = new System.Drawing.Point(35, 199);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(187, 20);
+            this.txtCPF.TabIndex = 13;
             // 
-            // textBox5
+            // txtTel
             // 
-            this.textBox5.Location = new System.Drawing.Point(34, 306);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(202, 20);
-            this.textBox5.TabIndex = 14;
+            this.txtTel.Location = new System.Drawing.Point(34, 306);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(202, 20);
+            this.txtTel.TabIndex = 14;
             // 
-            // dateTimePicker1
+            // dateNasc
             // 
-            this.dateTimePicker1.CustomFormat = "DD/MM/YYYY";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(522, 199);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(161, 20);
-            this.dateTimePicker1.TabIndex = 15;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateNasc.CustomFormat = "DD/MM/YYYY";
+            this.dateNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNasc.Location = new System.Drawing.Point(522, 199);
+            this.dateNasc.Name = "dateNasc";
+            this.dateNasc.Size = new System.Drawing.Size(161, 20);
+            this.dateNasc.TabIndex = 15;
+            this.dateNasc.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // comboBox1
+            // comboG
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(35, 248);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 21);
-            this.comboBox1.TabIndex = 16;
+            this.comboG.FormattingEnabled = true;
+            this.comboG.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.comboG.Location = new System.Drawing.Point(35, 248);
+            this.comboG.Name = "comboG";
+            this.comboG.Size = new System.Drawing.Size(187, 21);
+            this.comboG.TabIndex = 16;
+            this.comboG.SelectedIndexChanged += new System.EventHandler(this.comboG_SelectedIndexChanged);
             // 
-            // textBox6
+            // txtRG
             // 
-            this.textBox6.Location = new System.Drawing.Point(282, 199);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 20);
-            this.textBox6.TabIndex = 17;
+            this.txtRG.Location = new System.Drawing.Point(282, 199);
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(187, 20);
+            this.txtRG.TabIndex = 17;
             // 
-            // comboBox2
+            // comboEC
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(522, 249);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(161, 21);
-            this.comboBox2.TabIndex = 18;
+            this.comboEC.FormattingEnabled = true;
+            this.comboEC.Items.AddRange(new object[] {
+            "Solteiro",
+            "Casado",
+            "Viuvo",
+            "Divorciado"});
+            this.comboEC.Location = new System.Drawing.Point(522, 249);
+            this.comboEC.Name = "comboEC";
+            this.comboEC.Size = new System.Drawing.Size(161, 21);
+            this.comboEC.TabIndex = 18;
             // 
-            // textBox7
+            // txtCEP
             // 
-            this.textBox7.Location = new System.Drawing.Point(34, 356);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(202, 20);
-            this.textBox7.TabIndex = 19;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txtCEP.Location = new System.Drawing.Point(34, 356);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(202, 20);
+            this.txtCEP.TabIndex = 19;
+            this.txtCEP.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label11
             // 
@@ -243,12 +253,12 @@ namespace ProjetoHotel.Projeto
             this.label6.TabIndex = 21;
             this.label6.Text = "Endereço";
             // 
-            // textBox8
+            // txtEnd
             // 
-            this.textBox8.Location = new System.Drawing.Point(242, 356);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(438, 20);
-            this.textBox8.TabIndex = 22;
+            this.txtEnd.Location = new System.Drawing.Point(242, 356);
+            this.txtEnd.Name = "txtEnd";
+            this.txtEnd.Size = new System.Drawing.Size(438, 20);
+            this.txtEnd.TabIndex = 22;
             // 
             // label12
             // 
@@ -259,12 +269,12 @@ namespace ProjetoHotel.Projeto
             this.label12.TabIndex = 23;
             this.label12.Text = "Número";
             // 
-            // textBox9
+            // txtNum
             // 
-            this.textBox9.Location = new System.Drawing.Point(34, 408);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(65, 20);
-            this.textBox9.TabIndex = 24;
+            this.txtNum.Location = new System.Drawing.Point(34, 408);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(65, 20);
+            this.txtNum.TabIndex = 24;
             // 
             // label13
             // 
@@ -275,12 +285,12 @@ namespace ProjetoHotel.Projeto
             this.label13.TabIndex = 25;
             this.label13.Text = "Cidade";
             // 
-            // textBox10
+            // txtCidade
             // 
-            this.textBox10.Location = new System.Drawing.Point(105, 408);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(262, 20);
-            this.textBox10.TabIndex = 26;
+            this.txtCidade.Location = new System.Drawing.Point(105, 408);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(262, 20);
+            this.txtCidade.TabIndex = 26;
             // 
             // label14
             // 
@@ -292,12 +302,12 @@ namespace ProjetoHotel.Projeto
             this.label14.Text = "Estado";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // textBox11
+            // txtEstado
             // 
-            this.textBox11.Location = new System.Drawing.Point(370, 408);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(310, 20);
-            this.textBox11.TabIndex = 28;
+            this.txtEstado.Location = new System.Drawing.Point(370, 408);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(310, 20);
+            this.txtEstado.TabIndex = 28;
             // 
             // btnCadHosp
             // 
@@ -308,6 +318,7 @@ namespace ProjetoHotel.Projeto
             this.btnCadHosp.TabIndex = 29;
             this.btnCadHosp.Text = "Cadastrar Hóspede";
             this.btnCadHosp.UseVisualStyleBackColor = true;
+            this.btnCadHosp.Click += new System.EventHandler(this.btnCadHosp_Click);
             // 
             // imageList1
             // 
@@ -357,25 +368,25 @@ namespace ProjetoHotel.Projeto
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnVoltarHosp);
             this.Controls.Add(this.btnCadHosp);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtNum);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtEnd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.comboEC);
+            this.Controls.Add(this.txtRG);
+            this.Controls.Add(this.comboG);
+            this.Controls.Add(this.dateNasc);
+            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.txtCPF);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtProf);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -405,25 +416,25 @@ namespace ProjetoHotel.Projeto
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtProf;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.DateTimePicker dateNasc;
+        private System.Windows.Forms.ComboBox comboG;
+        private System.Windows.Forms.TextBox txtRG;
+        private System.Windows.Forms.ComboBox comboEC;
+        private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtEnd;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button btnCadHosp;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnVoltarHosp;
