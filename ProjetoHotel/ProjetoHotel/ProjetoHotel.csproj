@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dao\FuncionarioDao.cs" />
     <Compile Include="Dao\HospedeDao.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -53,6 +54,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\FuncionarioModel.cs" />
     <Compile Include="Model\HospedeModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Projeto\Cad.cs">
@@ -61,11 +63,23 @@
     <Compile Include="Projeto\Cad.Designer.cs">
       <DependentUpon>Cad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Projeto\Form1.cs">
+    <Compile Include="Projeto\CadFun.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Projeto\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Projeto\CadFun.Designer.cs">
+      <DependentUpon>CadFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projeto\CadHosp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projeto\CadHosp.Designer.cs">
+      <DependentUpon>CadHosp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projeto\ListarHosp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projeto\ListarHosp.Designer.cs">
+      <DependentUpon>ListarHosp.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
@@ -74,8 +88,14 @@
     <EmbeddedResource Include="Projeto\Cad.resx">
       <DependentUpon>Cad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Projeto\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Projeto\CadFun.resx">
+      <DependentUpon>CadFun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projeto\CadHosp.resx">
+      <DependentUpon>CadHosp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projeto\ListarHosp.resx">
+      <DependentUpon>ListarHosp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

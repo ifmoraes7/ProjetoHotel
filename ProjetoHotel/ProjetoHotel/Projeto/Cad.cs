@@ -12,6 +12,8 @@ namespace ProjetoHotel.Projeto
 {
     public partial class Cad : Form
     {
+        FormCadHosp cadHosp = new FormCadHosp();
+        FormCadFun cadFun = new FormCadFun();
         public Cad()
         {
             InitializeComponent();
@@ -38,19 +40,33 @@ namespace ProjetoHotel.Projeto
 
         private void cadastrarHospedeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCadHosp cad = new FormCadHosp();
+            
+            OpenForm(cadHosp);
 
-            cad.Show();
-            cad.TopLevel = false;
-            panel1.Controls.Add(cad);
-            cad.Visible = true;
-            cad.BringToFront();
-            cad.WindowState = FormWindowState.Maximized;
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
+
+        private void cadastrarFuncionárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            OpenForm(cadFun);
+
+        }
+        private void OpenForm(Form form)
+        {
+            form.Show();
+            form.TopLevel = false;
+            panel1.Controls.Add(form);
+            form.Visible = true;
+            form.BringToFront();
+            form.WindowState = FormWindowState.Maximized;
+        }
+
+
     }
 }

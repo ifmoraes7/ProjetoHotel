@@ -41,7 +41,7 @@ namespace ProjetoHotel.Projeto
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Visible = false;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

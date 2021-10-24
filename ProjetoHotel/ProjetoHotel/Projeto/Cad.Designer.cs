@@ -123,6 +123,7 @@ namespace ProjetoHotel.Projeto
             this.cadastrarFuncionárioToolStripMenuItem.Name = "cadastrarFuncionárioToolStripMenuItem";
             this.cadastrarFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.cadastrarFuncionárioToolStripMenuItem.Text = "Cadastrar Funcionário";
+            this.cadastrarFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarFuncionárioToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
